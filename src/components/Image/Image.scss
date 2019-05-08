@@ -1,0 +1,70 @@
+.image-root {
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid white;
+  > div {
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: pre;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover > div {
+    visibility: visible;
+  }
+
+  .image-icon {
+    font-size: 20px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px;
+    margin: 3px;
+
+    &:hover {
+      color: white;
+      border-color: white;
+    }
+  }
+}
+/***here are some randome filters given below, which are changing images view*/
+.filter1{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.filter2{
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+}
+.filter3{
+  -webkit-filter: contrast(4);
+  filter: contrast(4);
+}
+.filter4{
+  -webkit-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+.filter5{
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+}
+
